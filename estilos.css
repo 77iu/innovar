@@ -270,9 +270,13 @@ footer{
 	width: 100%;
 	background-color: #222;
 	height: 50px;
-	display: grid;
-	place-items: center;
-	
+	/* display: grid;
+	place-items: center; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 footer a{
 	color: white;
@@ -283,6 +287,11 @@ footer a{
 	border-radius:50%;
 	border: 1px solid rgba(255, 255, 255, 0.447);
 	animation: footer__a 2s linear alternate infinite;
+}
+footer h3{
+	color: white;
+	letter-spacing: 2px;
+	font-weight: 100;
 }
 @keyframes footer__a{
 	0%{background-color: lightseagreen;}
